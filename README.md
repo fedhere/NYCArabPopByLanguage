@@ -11,5 +11,5 @@ for adults and children who do not speak English well.") The data is available a
 
 A recent [language map of NYC](http://www.jillhubley.com/project/nyclanguages/) by Jill Hubley  inspired this work: the code in this repo parses ACS data to identify the number and fraction of Arab population by language spoken, where Arab is here used in the broad sense of population served by [AAFSC](http://www.aafscny.org/). The total number (left)  and fraction (right) of Arab speakers is mapped at the census tract level from the 2015 and 2010 ACS data (covering respectively the 2010-2014 and the 2005-2009 period).
 
-<img src="ArabCountByLanguage15.png.jpg" width="425"/> <img src="ArabByLanguage15.png" width="425"/> 
-<img src="ArabCountByLanguage10.png.jpg" width="425"/> <img src="ArabByLanguage10.png" width="425"/> 
+<img src="ArabCountByLanguage15.png" width="425"/> <img src="ArabByLanguage15.png" width="425"/> 
+<img src="ArabCountByLanguage10.png" width="425"/> <img src="ArabByLanguage10.png" width="425"/> 
