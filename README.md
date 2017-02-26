@@ -11,7 +11,8 @@ for adults and children who do not speak English well.") The data is available a
 A recent [language map of NYC](http://www.jillhubley.com/project/nyclanguages/) by Jill Hubley inspired this work: we will assume hereafter that population in households where Arab, Urdi, and Hindi is spoken belong to the AMESA population that [AAFSC](http://www.aafscny.org/) serves and identify their distribution in NYC. The code in this repo parses ACS data to identify the density, counts and fraction of Arab population by language spoken, and dose some modest geospatial fymnastics for this purpose.
 
 Below is a density map of AMESA in NYC (people per sq mile) for 2015 (left) and 2010 (right) ACS data (covering respectively the 2010-2014 and the 2005-2009 period):
-<img src="ArabDensity2015Smooth.png" width="425"/> <img src="ArabDensity2010Smooth.png" width="425"/> 
+
+<img src="ArabDensity2015Smooth.png" width="425"/>  <img src="ArabDensity2010Smooth.png" width="425"/> 
 
 A few more maps:
 
