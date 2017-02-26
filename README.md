@@ -13,3 +13,13 @@ A recent [language map of NYC](http://www.jillhubley.com/project/nyclanguages/) 
 
 <img src="ArabCountByLanguage15.png" width="425"/> <img src="ArabByLanguage15.png" width="425"/> 
 <img src="ArabCountByLanguage10.png" width="425"/> <img src="ArabByLanguage10.png" width="425"/> 
+
+
+The map below shows the change in fraction of population speaking arab languages: 
+<img src="ArabCountByLanguage15.png" width="425"/>
+
+The map below shows the numbers of Arab speakers in the census tracts and the location of the [AAFSC](http://www.aafscny.org/) offices.
+
+The following gifs show the evolution from 2005 though 2014 (with really only 2 time stamps, smoothed for impact) on numbers (left) fraction (right) and below for number separated by the four relevant language classes 
+!(https://github.com/fedhere/NYCArabPopByLanguage/blob/master/ArabCounttimeline.gif)
+!(ArabCounttimeline.gif)
