@@ -16,12 +16,12 @@ Below is a density map of AMESA in NYC (people per sq mile) for 2015 (left) and 
 
 A few more maps:
 
-The total number (left)  and fraction (right) of Arab speakers is mapped at the census tract level from the 2015 and 2010 ACS data .
+The total number (top)  and fraction (bottom) of Arab speakers is mapped at the census tract level from the 2015 (left) and 2010 (right) ACS data .
 
 
 
-<img src="ArabCountByLanguage15.png" width="425"/> <img src="ArabByLanguage15.png" width="425"/> 
-<img src="ArabCountByLanguage10.png" width="425"/> <img src="ArabByLanguage10.png" width="425"/> 
+<img src="ArabCountByLanguage15.png" width="425"/> <img src="ArabCountByLanguage10.png" width="425"/> 
+<img src="ArabByLanguage15.png" width="425"/> <img src="ArabByLanguage10.png" width="425"/> 
 
 
 The map below shows the change in fraction of population speaking arab languages: 
