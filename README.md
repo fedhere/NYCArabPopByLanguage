@@ -24,6 +24,9 @@ The map below shows the numbers of Arab speakers in the census tracts and the lo
 
 
 The following gifs show the evolution from 2005 though 2014 (with really only 2 time stamps, smoothed for impact) on numbers (left) fraction (right) and below for number separated by the four relevant language classes 
+
 !(https://github.com/fedhere/NYCArabPopByLanguage/blob/master/ArabCounttimeline.gif)
+
 !(https://github.com/fedhere/NYCArabPopByLanguage/blob/master/ArabFractiontimeline.gif)
+
 !(https://github.com/fedhere/NYCArabPopByLanguage/blob/master/fraction4Languagestimeline.gif)
