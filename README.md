@@ -14,7 +14,6 @@ Below is a density map of AMESA in NYC (people per sq mile) for 2015 (left) and 
 
 <p align="center">
   <b>AMESA population Density 2015 - 2010:</b><br>
-  <br><br>
 </p>
 
 <img src="ArabDensity2015Smooth.png" width="425"/>  <img src="ArabDensity2010Smooth.png" width="425"/> 
@@ -23,7 +22,6 @@ The map below shows the numbers of Arab/Hindi/Urdu speakers in the 2015 ACS cens
 
 <p align="center">
   <b>AAFSC offices & AMESA population (counts, 2015):</b><br>
-  <br><br>
 <img src="AAFSClocations.png" width="600"/>
 </p>
 A few more maps:
@@ -32,14 +30,12 @@ The total number (top)  and fraction (bottom) of Arab/Hindi/Urdu speakers is map
 
 <p align="center">
   <b>AMESA population count 2015 - 2010:</b><br>
-  <br><br>
 </p>
 
 <img src="ArabCountByLanguage15.png" width="425"/> <img src="ArabCountByLanguage10.png" width="425"/> 
 
 <p align="center">
   <b>AMESA population fraction 2015 - 2010:</b><br>
-  <br><br>
 </p>
 <img src="ArabByLanguage15.png" width="425"/> <img src="ArabByLanguage10.png" width="425"/> 
 
@@ -47,7 +43,6 @@ Here the maps of population fraction are shown for the 4 relevant languages sepa
 
 <p align="center">
   <b>population fraction speaking Arab, Hindi, Urdu, and other Indi languages 2015 - 2010:</b><br>
-  <br><br>
 </p>
 <img src="fraction4Languages15.png" width="425"/> 
 <img src="fraction4Languages10.png" width="425"/> 
@@ -56,9 +51,7 @@ The map below shows the **changes** in fraction of population speaking arab lang
 
 <p align="center">
   <b>Changes in the fractino of AMESA population 2015 - 2010:</b><br>
-  <br><br>
-
-<img src="ArabSpeakersChanges.png" width="425"/>
+<img src="ArabSpeakersChanges.png" width="600"/>
 </p>
 
 Notice the large census tract in Flushing showing significant growth, which from the 4-panel single language maps below can be identified as grouwth in the Hindi speaking population. should in fact be considered as an artefact of the census tracts design:  this large census tract was introduced in the newer ACS data collection.
