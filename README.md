@@ -13,7 +13,7 @@ A recent [language map of NYC](http://www.jillhubley.com/project/nyclanguages/) 
 Below is a density map of AMESA in NYC (people per sq mile) for 2015 (left) and 2010 (right) ACS data (covering respectively the 2010-2014 and the 2005-2009 period):
 
 <p align="center">
-  <b>AMESA population Density:</b><br>
+  <b>AMESA population Density 2015 - 2010:</b><br>
   <br><br>
 </p>
 
@@ -21,9 +21,11 @@ Below is a density map of AMESA in NYC (people per sq mile) for 2015 (left) and 
 
 The map below shows the numbers of Arab/Hindi/Urdu speakers in the 2015 ACS census tracts and the location of the [AAFSC](http://www.aafscny.org/) offices.
 
-
+<p align="center">
+  <b>[AAFSC](http://www.aafscny.org/) centers and AMESA population (counts):</b><br>
+  <br><br>
 <img src="AAFSClocations.png" width="600"/>
-
+</p>
 A few more maps:
 
 The total number (top)  and fraction (bottom) of Arab/Hindi/Urdu speakers is mapped at the census tract level from the 2015 (left) and 2010 (right) ACS data .
