@@ -1,20 +1,10 @@
 from __future__ import print_function, division
-import os
-import sys
+import pandas as pd
 import geopandas as gpd
 import pylab as pl
-import optparse
 import matplotlib as mpl
-import numpy as np
+import optparse
 
-DEBUG = True
-DEBUG = False
-
-#for python 2/3 compatibility
-try:
-    rawinput = raw_input
-except NameError:
-    rawinput = input
 
 def discrete_cmap(N, base_cmap=None):
     '''Create an N-bin discrete colormap from the specified input map
@@ -24,7 +14,7 @@ def discrete_cmap(N, base_cmap=None):
     N : number of colors
     base_cmap : a pylab cmap name (string) or pylab cmap object'''
     # Note that if base_cmap is a string or None, you can simply do
-    #    return plt.cm.get_cmap(base_cmap, N)
+    #    return pl.cm.get_cmap(base_cmap, N)
     # The following works for string, None, or a colormap instance:
 
     from matplotlib.colors import LinearSegmentedColormap
@@ -34,9 +24,8 @@ def discrete_cmap(N, base_cmap=None):
     return LinearSegmentedColormap.from_list(cmap_name, color_list, N)
 
 
-def choroplethNYC(df, column=None, cmap='viridis', ax=None,
-                  cb=True, kind='continuous', alpha=1,
-                  spacing=False, lw=1, width=None, side=False):
+def choroplethNYC(df, column=None, cmap='viridis', ax=None, cb=True, kind='continuous',
+                  spacing=False, lw=1, width=None, side=False, loc=1):
     '''creates a choropleth from a dataframe column - NYC tuned
     Arguments:
     df : a GeoDataFrame
@@ -57,9 +46,9 @@ def choroplethNYC(df, column=None, cmap='viridis', ax=None,
         ax = df.plot(cmap=cmap, alpha=1, ax=ax, linewidth=lw)
     else:
         ax = df.dropna(subset=[column]).plot(column=column,
-                                             cmap=cmap, alpha=alpha, ax=ax,
+                                             cmap=cmap, alpha=1, ax=ax,
                                              linewidth=lw)
-        vmin, vmax = min(df[column].values), max(df[column].values)
+    vmin, vmax = min(df[column].values), max(df[column].values)
     ax.axis('off')
     fig = ax.get_figure()
 
@@ -86,8 +75,7 @@ def choroplethNYC(df, column=None, cmap='viridis', ax=None,
 
         if kind is 'discrete':
             sm = mpl.colorbar.ColorbarBase(ax=cax, cmap=cmap,
-                                norm=pl.Normalize(vmin=vmin - .5,
-                                                  vmax=vmax + .5),
+                                norm=pl.Normalize(vmin=vmin - .5, vmax=vmax + .5),
                                 #spacing='uniform',
                                 orientation='vertical')
 
@@ -97,7 +85,6 @@ def choroplethNYC(df, column=None, cmap='viridis', ax=None,
                                 ticks=range(spacing + 1),
                                 spacing='uniform',
                                 orientation='vertical')
-
         sm._A = []
 
         if  kind is 'discrete':
@@ -105,78 +92,29 @@ def choroplethNYC(df, column=None, cmap='viridis', ax=None,
             cb.ax.set_yticklabels(['%s' % (c) for c in np.sort(nc)])
         else:
             cb = fig.colorbar(sm, cax=cax)
-    return fig, ax, cb
+    return fig, ax
 
 
 if __name__ == '__main__':
-    parser = optparse.OptionParser(usage="choroplathNYC <path to shapefile> <column>", conflict_handler="resolve")
+    parser = optparse.OptionParser(usage="choroplathNYC <path to shapefile> <column name>", conflict_handler="resolve")
     parser.add_option('-d', '--discrete', default=False, action="store_true",
 	                      help='discrete steps color bar')
-    parser.add_option('-m', '--cmap', default='viridis', type='string',
+    parser.add_option('-c', '--cmap', default='viridis', type='string',
 	                      help='matplotlib colormap name')
-    parser.add_option('-t', '--title', default=None, type='string',
-	                      help='title of figure')
-    parser.add_option('-o', '--output', default=None, type='string',
-	                      help='''output file 
-(must be pylab compatible extension, e.g. pdf png etc''')
-    parser.add_option('--clobber', default=False, action="store_true",
-	                      help='''clobber output file''')
-    parser.add_option('--noshow', default=False, action="store_true",
-	                      help='do not show figure (default)')
-    parser.add_option('--debug', default=False, action="store_true",
-	                      help='print debug statements')
+    
+    
 
- 
     options,  args = parser.parse_args()
-    if options.debug:
-        DEBUG = True
-    if DEBUG:
-        print (options)
-        print (args)
     
     if len(args) == 0:
-        options, args = parser.parse_args(args=['--help'])
-        sys.exit(0)
+	options, args = parser.parse_args(args=['--help'])
+	sys.exit(0)
     if args[0].endswith("shp"):
         gdf = gpd.read_file(args[0])
     else:
         options, args = parser.parse_args(args=['--help'])
-        sys.exit(0)
-    if DEBUG: print (gdf.head())
+	sys.exit(0)
+    if args[1] in gdf.columns:
+        choroplethNYC(args[0], args[1])
     
-    kind = 'continous'
-    if options.discrete:
-        kind = 'discrete'
-
-    if len(args)>1:
-        if args[1] in gdf.columns:
-            try:
-                gdf[args[1]] = gdf[args[1]].astype(float)
-            
-            except ValueError:
-                print ("the requested column cannot be converted to nuerical values. Available columns:",
-            gdf.columns)
-                sys.exit()
-            fig, ax, cb = choroplethNYC(gdf, args[1], cmap=options.cmap,
-                                    kind=kind)
-        else:
-            print ("column", args[1], "not in file. Available columns:",
-            gdf.columns)
-            sys.exit()
-    else: 
-        fig, ax = choroplethNYC(gdf, cmap=options.cmap)
-    
-    if not options.title is None:
-        ax.set_title(options.title, fontsize=20)
         
-    if not options.output is None:
-        if os.path.isfile(options.output) and not options.clobber:
-            answer = rawinput("file exists, really replace? (Y/n)\n")
-            if (answer.startswith('Y') or answer.startswith('y') or
-                answer.startswith('')):
-                fig.savefig(options.output, clobber=True)
-        else:
-            fig.savefig(options.output, clobber=True)            
-    else:
-        if not options.noshow:
-            pl.show()
