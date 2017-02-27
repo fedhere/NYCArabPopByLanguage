@@ -22,7 +22,7 @@ Below is a density map of AMESA in NYC (people per sq mile) for 2015 (left) and 
 The map below shows the numbers of Arab/Hindi/Urdu speakers in the 2015 ACS census tracts and the location of the [AAFSC](http://www.aafscny.org/) offices.
 
 <p align="center">
-  <b>[AAFSC](http://www.aafscny.org/) centers and AMESA population (counts):</b><br>
+  <b>AAFSC offices & AMESA population (counts, 2015):</b><br>
   <br><br>
 <img src="AAFSClocations.png" width="600"/>
 </p>
@@ -30,8 +30,17 @@ A few more maps:
 
 The total number (top)  and fraction (bottom) of Arab/Hindi/Urdu speakers is mapped at the census tract level from the 2015 (left) and 2010 (right) ACS data .
 
+<p align="center">
+  <b>AMESA population count 2015 - 2010:</b><br>
+  <br><br>
+</p>
 
 <img src="ArabCountByLanguage15.png" width="425"/> <img src="ArabCountByLanguage10.png" width="425"/> 
+
+<p align="center">
+  <b>AMESA population fraction 2015 - 2010:</b><br>
+  <br><br>
+</p>
 <img src="ArabByLanguage15.png" width="425"/> <img src="ArabByLanguage10.png" width="425"/> 
 
 Here the maps of population fraction are shown for the 4 relevant languages separately: Arab, Hindi, Urdu, and Other Indi Languages. The last class is however *not* included in the aggregated estimates above, as it may be a significant source of contamination since "Other Indi Languages" include both [AAFSC](http://www.aafscny.org/) relevand and non-relevant languages. 
