@@ -14,19 +14,27 @@ Below is a density map of AMESA in NYC (people per sq mile) for 2015 (left) and 
 
 <img src="ArabDensity2015Smooth.png" width="425"/>  <img src="ArabDensity2010Smooth.png" width="425"/> 
 
+The map below shows the numbers of Arab/Hindi/Urdu speakers in the 2015 ACS census tracts and the location of the [AAFSC](http://www.aafscny.org/) offices.
+
+
+<img src="AAFSClocations.png" width="600"/>
+
 A few more maps:
 
-The total number (top)  and fraction (bottom) of Arab speakers is mapped at the census tract level from the 2015 (left) and 2010 (right) ACS data .
-
+The total number (top)  and fraction (bottom) of Arab/Hindi/Urdu speakers is mapped at the census tract level from the 2015 (left) and 2010 (right) ACS data .
 
 
 <img src="ArabCountByLanguage15.png" width="425"/> <img src="ArabCountByLanguage10.png" width="425"/> 
 <img src="ArabByLanguage15.png" width="425"/> <img src="ArabByLanguage10.png" width="425"/> 
 
+Here the maps of population fraction are shown for the 4 relevant languages separately: Arab, Hindi, Urdu, and Other Indi Languages. The last class is however *not* included in the aggregated estimates above, as it may be a significant source of contamination since "Other Indi Languages" include both [AAFSC](http://www.aafscny.org/) relevand and non-relevant languages. 
 
-The map below shows the change in fraction of population speaking arab languages: 
-<img src="ArabCountByLanguage15.png" width="425"/>
+<img src="fraction4Languages15.png" width="425"/> 
+<img src="fraction4Languages10.png" width="425"/> 
 
-The map below shows the numbers of Arab speakers in the census tracts and the location of the [AAFSC](http://www.aafscny.org/) offices.
+The map below shows the **changes** in fraction of population speaking arab languages.
 
-The following gifs show the evolution from 2005 though 2014 (with really only 2 time stamps, smoothed for impact) on numbers (left) fraction (right) and below for number separated by the four relevant language classes 
+<img src="ArabSpeakersChanges.png" width="425"/>
+
+Notice the large census tract in Flushing showing significant growth, which from the 4-panel single language maps below can be identified as grouwth in the Hindi speaking population. should in fact be considered as an artefact of the census tracts design:  this large census tract was introduced in the newer ACS data collection.
+
