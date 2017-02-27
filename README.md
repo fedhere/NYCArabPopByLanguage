@@ -57,8 +57,9 @@ The map below shows the **changes** in fraction of population speaking arab lang
 <p align="center">
   <b>Changes in the fractino of AMESA population 2015 - 2010:</b><br>
   <br><br>
-</p>
+
 <img src="ArabSpeakersChanges.png" width="425"/>
+</p>
 
 Notice the large census tract in Flushing showing significant growth, which from the 4-panel single language maps below can be identified as grouwth in the Hindi speaking population. should in fact be considered as an artefact of the census tracts design:  this large census tract was introduced in the newer ACS data collection.
 
