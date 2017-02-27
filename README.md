@@ -14,6 +14,11 @@ Below is a density map of AMESA in NYC (people per sq mile) for 2015 (left) and 
 
 <img src="ArabDensity2015Smooth.png" width="425"/>  <img src="ArabDensity2010Smooth.png" width="425"/> 
 
+The map below shows the numbers of Arab/Hindi/Urdu speakers in the 2015 ACS census tracts and the location of the [AAFSC](http://www.aafscny.org/) offices.
+
+
+<img src="AAFSClocations.png" width="600"/>
+
 A few more maps:
 
 The total number (top)  and fraction (bottom) of Arab/Hindi/Urdu speakers is mapped at the census tract level from the 2015 (left) and 2010 (right) ACS data .
@@ -32,7 +37,4 @@ The map below shows the **changes** in fraction of population speaking arab lang
 <img src="ArabSpeakersChanges.png" width="425"/>
 
 Notice the large census tract in Flushing showing significant growth, which from the 4-panel single language maps below can be identified as grouwth in the Hindi speaking population. should in fact be considered as an artefact of the census tracts design:  this large census tract was introduced in the newer ACS data collection.
-
-The map below shows the numbers of Arab speakers in the census tracts and the location of the [AAFSC](http://www.aafscny.org/) offices.
-
 
