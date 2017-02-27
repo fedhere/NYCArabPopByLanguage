@@ -47,7 +47,7 @@ Here the maps of population fraction are shown for the 4 relevant languages sepa
 <img src="fraction4Languages15.png" width="425"/> 
 <img src="fraction4Languages10.png" width="425"/> 
 
-The map below shows the **changes** in fraction of population speaking arab languages.
+The map below shows the **changes** in fraction of population speaking arab languages. Blue region have a decreased fraction, red region have an increased fraction or AMESA population.
 
 <p align="center">
   <b>Changes in the fractino of AMESA population 2015 - 2010:</b><br>
