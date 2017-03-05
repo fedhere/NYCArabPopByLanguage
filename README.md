@@ -1,5 +1,5 @@
 # NYCArabPopByLanguage
-Determining the population of Arab people by language spoken
+Determining the population of Arab people by language spoken. Also see https://nyu.carto.com/u/fb55/builder/b84187ec-fd42-11e6-999f-0e3ff518bd15/embed
 
 The Arab population is classified as Caucasian in the Census and [American Community Survey](https://www.census.gov/programs-surveys/acs/) (ACS) datasets. This makes it hard to track the population and population changes geographically, which in turns makes it hard to distribute resources and plan outreach.
 
